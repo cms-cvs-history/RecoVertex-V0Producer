@@ -1,0 +1,20 @@
+module rsV0Candidates = V0Producer {
+  // string that tells which TrackCollection to use for vertexing
+  untracked string trackRecoAlgorithm = 'rsWithMaterialTracks'
+
+  // set to 1, uses tracks refit by the KVF for V0Candidate kinematics
+  untracked int32 useSmoothing = 1
+  
+  // set to 1, stores tracks refit by KVF in reco::Vertex object
+  //  that is contained in the produced reco::V0Candidate
+  untracked int32 storeSmoothedTracksInRecoVertex = 1
+
+  // The next parameters are cut values 
+  untracked double chi2Cut = 1.0
+  untracked double rVtxCut = 0.1
+  untracked double vtxSignificanceCut = 22.0
+  untracked double collinearityCut = 0.02
+  untracked double kShortMassCut = 0.25
+  untracked double lambdaMassCut = 0.25
+
+}

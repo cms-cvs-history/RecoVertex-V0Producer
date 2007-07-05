@@ -1,0 +1,5 @@
+# magnetic field
+include "MagneticField/Engine/data/volumeBasedMagneticField.cfi"
+
+# ctfV0Producer
+include "RecoVertex/V0Producer/data/ctfV0Candidates.cfi"
