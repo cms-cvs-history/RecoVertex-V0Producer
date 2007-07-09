@@ -19,7 +19,7 @@ module rsV0Candidates = V0Producer {
 
   // These next parameters decide whether or not to reconstruct
   //  specific V0 particles
-  untracked int selectKshorts = 1
-  untracked int selectLambdas = 1
+  untracked int32 selectKshorts = 1
+  untracked int32 selectLambdas = 1
 
 }
