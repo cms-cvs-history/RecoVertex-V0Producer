@@ -17,4 +17,9 @@ module ctfV0Candidates = V0Producer {
   untracked double kShortMassCut = 0.25
   untracked double lambdaMassCut = 0.25
 
+  // These parameters decide whether or not to reconstruct
+  //  specific V0 particles
+  untracked int selectKshorts = 1
+  untracked int selectLambdas = 1
+
 }
