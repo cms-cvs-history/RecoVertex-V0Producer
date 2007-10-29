@@ -1,5 +1,15 @@
 # magnetic field
+include "Geometry/CMSCommonData/data/cmsMagneticFieldXML.cfi"
 include "MagneticField/Engine/data/volumeBasedMagneticField.cfi"
+
+# tracker geometry
+include "Geometry/CMSCommonData/data/cmsIdealGeometryXML.cfi"
+
+# tracker geometry
+include "Geometry/TrackerGeometryBuilder/data/trackerGeometry.cfi"
+
+# tracker numbering
+include "Geometry/TrackerNumberingBuilder/data/trackerNumberingGeometry.cfi"
 
 # rsV0Producer
 include "RecoVertex/V0Producer/data/rsV0Candidates.cfi"
