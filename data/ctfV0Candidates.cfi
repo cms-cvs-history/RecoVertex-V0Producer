@@ -3,23 +3,27 @@ module ctfV0Candidates = V0Producer {
   untracked string trackRecoAlgorithm = 'ctfWithMaterialTracks'
 
   // set to 1, uses tracks refit by the KVF for V0Candidate kinematics
-  untracked int32 useSmoothing = 1
+  bool useSmoothing = true
 
   // set to 1, stores tracks refit by KVF in reco::Vertex object
   //  that is contained in the produced reco::V0Candidate 
-  untracked int32 storeSmoothedTracksInRecoVertex = 1
+  bool storeSmoothedTracksInRecoVertex = true
+
+  bool doPostFitCuts = true
 
   // The next parameters are cut values
-  untracked double chi2Cut = 1.0
-  untracked double rVtxCut = 0.1
-  untracked double vtxSignificanceCut = 22.0
-  untracked double collinearityCut = 0.02
-  untracked double kShortMassCut = 0.25
-  untracked double lambdaMassCut = 0.25
+  double chi2Cut = 1.0
+  double rVtxCut = 0.1
+  double vtxSignificanceCut = 22.0
+  double collinearityCut = 0.02
+  double kShortMassCut = 0.25
+  double lambdaMassCut = 0.25
 
   // These parameters decide whether or not to reconstruct
   //  specific V0 particles
-  untracked int32 selectKshorts = 1
-  untracked int32 selectLambdas = 1
+  bool selectKshorts = true
+  bool selectLambdas = true
+
+  untracked string vertexFitter = 'kvf'
 
 }
