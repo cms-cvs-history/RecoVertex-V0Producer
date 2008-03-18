@@ -8,6 +8,9 @@ include "Geometry/CMSCommonData/data/cmsIdealGeometryXML.cfi"
 # tracker geometry
 include "Geometry/TrackerGeometryBuilder/data/trackerGeometry.cfi"
 
+# global tracker geometry
+include "Geometry/CommonDetUnit/data/globalTrackingGeometry.cfi"
+
 # tracker numbering
 include "Geometry/TrackerNumberingBuilder/data/trackerNumberingGeometry.cfi"
 

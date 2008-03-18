@@ -5,6 +5,9 @@ include "MagneticField/Engine/data/volumeBasedMagneticField.cfi"
 # tracker geometry
 include "Geometry/CMSCommonData/data/cmsIdealGeometryXML.cfi"
 
+# global tracker geometry
+include "Geometry/CommonDetUnit/data/globalTrackingGeometry.cfi"
+
 # tracker geometry
 include "Geometry/TrackerGeometryBuilder/data/trackerGeometry.cfi"
 
