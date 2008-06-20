@@ -28,6 +28,7 @@ module ctfV0Candidates = V0Producer {
   double collinearityCut = 0.02
   double kShortMassCut = 0.07
   double lambdaMassCut = 0.25
+  double impactParameterCut = 0.0
 
   // These parameters decide whether or not to reconstruct
   //  specific V0 particles
