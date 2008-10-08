@@ -9,6 +9,7 @@
 <use name=SimDataFormats/Vertex>
 <use name=root>
 <use name=TrackingTools/TrajectoryState>
+<use name=TrackingTools/PatternTools>
 <use name=Geometry/CommonDetUnit>
 <use name=Geometry/Records>
 <use name=Geometry/TrackerGeometryBuilder>
@@ -20,4 +21,5 @@
 <library file=*.cc name=RecoVertexV0Analyzer>
   <flags EDM_PLUGIN=1>
 </library>
+
 
