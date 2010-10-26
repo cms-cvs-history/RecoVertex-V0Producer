@@ -13,7 +13,7 @@
 //
 // Original Author:  Brian Drell
 //         Created:  Fri May 18 22:57:40 CEST 2007
-// $Id: V0Fitter.cc,v 1.45 2010/02/26 23:19:55 drell Exp $
+// $Id: V0Fitter.cc,v 1.49 2010/08/05 22:01:19 wmtan Exp $
 //
 //
 
@@ -224,7 +224,7 @@ void V0Fitter::fitAll(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
       if (dca < 0. || dca > tkDCACut) continue;
       if (sqrt( cxPt.x()*cxPt.x() + cxPt.y()*cxPt.y() ) > 120. 
-          || abs(cxPt.z()) > 300.) continue;
+          || std::abs(cxPt.z()) > 300.) continue;
 
       // Get trajectory states for the tracks at POCA for later cuts
       TrajectoryStateClosestToPoint posTSCP = 
